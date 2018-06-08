@@ -1,4 +1,4 @@
-FROM ububtu:16.04
+FROM nvidia/cuda:9.2-devel 
 RUN apt-get update && apt-get install -y subversion 
 RUN svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm && \
     cd llvm/tools && \

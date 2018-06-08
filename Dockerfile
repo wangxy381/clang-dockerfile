@@ -1,5 +1,5 @@
 FROM nvidia/cuda:9.2-devel 
-RUN apt-get update && apt-get install -y subversion && apt-get install -y cmake 
+RUN apt-get update && apt-get install -y subversion && apt-get install -y cmake && apt-get install python3
 RUN svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm && \
     cd llvm/tools && \
     svn co http://llvm.org/svn/llvm-project/cfe/trunk clang && \

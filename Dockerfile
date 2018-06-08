@@ -16,6 +16,6 @@ RUN svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm && \
     mkdir build && \
     cd build && \
     cmake -G "Unix Makefiles" ../llvm && \
-    make -j24 
+    make -j12 
     
 
